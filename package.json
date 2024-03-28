@@ -10,6 +10,9 @@
     "package": "plasmo package"
   },
   "dependencies": {
+    "@parcel/runtime-js": "2.8.3",
+    "@plasmohq/messaging": "^0.6.2",
+    "axios": "^1.6.8",
     "plasmo": "0.85.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -25,7 +28,13 @@
   },
   "manifest": {
     "host_permissions": [
-      "https://*/*"
+      "https://*/*",
+      "https://*.plasmo.com/*",
+      "https://*.theresanaiforthat.com/*"
+    ],
+    "permissions": [
+      "scripting",
+      "nativeMessaging"
     ]
   }
 }
